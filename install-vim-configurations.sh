@@ -41,4 +41,25 @@ else
 fi
 
 
+# ---- copy configuration over to new directories
+
+echo "warning, this will overwrite current directories for neovim and vim configuration."
+echo "Would you like to proceed?"
+
+read -r ANSWER
+#ANSWER = $(echo "$ANSWER" | tr '[:lower:]')
+
+if [[ $ANSWER == [yY] ]]; then
+	echo "copying configuration to local system directories"
+	cp -r "$CONFIGURATION_REPO_PATH/.config/nvim" "$NEOVIM_CONFIGURATION_PATH"
+	cp -r "$CONFIGURATION_REPO_PATH/.vim" "$VIM_CONFIGURATION_PATH"
+fi
+
+
+
+
+
+echo "changes to the bashrc must be sourced to make these scripts callable"
+
+
 
