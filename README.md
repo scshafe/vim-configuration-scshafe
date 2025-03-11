@@ -1,5 +1,7 @@
 # vim-configuration-scshafe
 
+I use this repository to  easily sync my personal vim settings across computers, VM's and WSL distros.
+
 Cloning this folder can be used to directly set local vim settings by running:
 
 ```
