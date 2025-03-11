@@ -1,11 +1,17 @@
 # vim-configuration-scshafe
 
-I use this repository to  easily sync my personal vim settings across computers, VM's and WSL distros.
+I use this repository to  easily sync my personal neovim and vim settings across computers, VM's and WSL distros.
 
-Cloning this folder can be used to directly set local vim settings by running:
+Clone this folder and run `setup-vim-configuration.sh` to set these settings. (note: this will overwrite current settings)
 
 ```
-$ cd ~
-$ git clone git@github.com:scshafe/vim-configuration-scshafe.git .vim
+$ setup-vim-configurations.sh
 ```
+
+To save changes and push them to the repo run:
+
+```
+$ save-vim-configurations.sh
+```
+
 
